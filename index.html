@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Gallery</h1>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h2>BIENVENIDOS</h2>
+            <p>Sumérgete en el Mundo del Cine desde las más grandes superproducciones hasta las joyas ocultas del cine independiente, aquí descubrirás una selección de películas que te harán soñar, reír y reflexionar. ¡Encuentra tu próxima favorita!</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Movie Gallery</h2>
+        <select id="genre-select">
+            <option value="all">Todos los Géneros</option>
+            <option value="28">Acción</option>
+            <option value="35">Comedia</option>
+            <option value="18">Drama</option>
+        </select>
+        <div id="movies-grid" class="movies-grid"></div>
+    </section>
+
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Movie Title</h2>
+            <img id="modal-img" src="" alt="Movie Image" />
+            <p id="modal-description">Movie description goes here...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Movie Gallery - 2024</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
